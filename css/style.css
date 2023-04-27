@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  background-color: #f2e6fa;
+  color: #333;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: #41126a;
+  color: #fff;
+}
+
+header .header-title a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-lists ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-lists ul li {
+  margin-right: 20px;
+}
+
+.nav-lists ul li:hover {
+  text-decoration: underline;
+}
+
+.nav-lists ul li:last-child {
+  margin-right: 0;
+}
+
+.nav-lists ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  z-index: 10px;
+}
+
+.hamburger-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+main .main-container p {
+  font-size: 20px;
+}
+
+main .main-container .badui-link {
+  font-size: 20px;
+}
+
+main .main-container .badui-link a {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+main .main-container .badui-link .material-icons {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+main .main-container .bad-ui-img {
+  padding-bottom: 30px;
+}
+
+footer {
+  padding: 20px;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+main .main-container .register-form {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  -webkit-box-shadow: 0px 0px 10px #888888;
+          box-shadow: 0px 0px 10px #888888;
+  margin-top: 50px;
+}
+
+main .main-container .register-form .form-header {
+  text-align: center;
+  font-size: 36px;
+  color: #4b0082;
+  margin-bottom: 40px;
+}
+
+main .main-container .register-form form label {
+  font-size: 20px;
+  color: #4b0082;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+main .main-container .register-form form input[type="text"],
+main .main-container .register-form form input[type="number"],
+main .main-container .register-form form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  border: 2px solid #4b0082;
+  font-size: 18px;
+  color: #4b0082;
+}
+
+main .main-container .register-form form .meeting-day-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .main-container .register-form form .meeting-day-wrapper .form-check {
+  width: calc(100% / 3);
+}
+
+main .main-container .register-form form .optional-form-elements {
+  display: none;
+}
+
+main .main-container .register-form form .optional-form-elements .catalog-link {
+  padding-top: 20px;
+}
+
+main .main-container .register-form form .search-btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .main-container .register-form form .search-btn-wrap .advanced-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 12px;
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+main .main-container .register-form form .search-btn-wrap .advanced-search:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+main .main-container .register-form form .search-btn-wrap #searchBtn {
+  background-color: #4b0082;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+main .main-container .register-form form .search-btn-wrap #searchBtn:hover {
+  background-color: #6a5acd;
+}
+
+.reload-btn button {
+  background-color: #4b0082;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.time-container .clock-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time-container .clock-wrapper p {
+  font-size: 20px;
+  color: #4b0082;
+  font-weight: 600;
+  width: 50%;
+}
+
+@media (max-width: 1394px) {
+  .nav-lists ul {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .hamburger-menu.active .hamburger-bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-menu.active .hamburger-bar:nth-child(1) {
+    -webkit-transform: rotate(45deg) translate(5px, 5px);
+            transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger-menu.active .hamburger-bar:nth-child(3) {
+    -webkit-transform: rotate(-45deg) translate(5px, -5px);
+            transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .nav-lists ul.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #41126a;
+    padding: 20px;
+    z-index: 10;
+  }
+  .nav-lists ul.active li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 493px) {
+  header .header-title {
+    font-size: 24px;
+  }
+  header .header-title a {
+    text-decoration: none;
+    color: white;
+  }
+}
+/*# sourceMappingURL=style.css.map */

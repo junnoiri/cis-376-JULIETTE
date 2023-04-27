@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JULIETTE-Lab</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Clock Picker -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/bootstrap-clockpicker.min.css" />
+  </head>
+
+  <body>
+    <header>
+      <div
+        class="nav nav-lists header-wrapper justify-content-between align-items-center"
+      >
+        <div class="header-name me-auto">
+          <h1 class="header-title"><a href="/">JULIETTE Final Project</a></h1>
+        </div>
+        <nav class="nav-lists ms-auto">
+          <ul>
+            <li class="home">
+              <a href="./">Home</a>
+            </li>
+            <li class="badUI">
+              <a href="./badui.html">Check bad UI design</a>
+            </li>
+            <li class="improvedUI-link">
+              <a href="./improvedui.html">Check out How I improved it</a>
+            </li>
+            <li class="repo-link">
+              <a
+                href="https://github.com/junnoiri/cis-376-JULIETTE"
+                target="_blank"
+                >See the Code</a
+              >
+            </li>
+            <li class="storycard-link">
+              <a
+                href="https://gist.github.com/barrycumbie/bdbafe19a5de141fb1e0930b32e439e7"
+                target="_blank"
+                >Story Card</a
+              >
+            </li>
+            <li class="nu-link">
+              <a
+                href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjunnoiri.github.io%2Fcis-376-HOTEL%2F"
+                target="_blank"
+                >Validity Checker</a
+              >
+            </li>
+          </ul>
+          <div class="hamburger-menu">
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h1 class="text-center my-5">That's how I improved the UI!!</h1>
+            <div class="main-container">
+              <div class="register-form">
+                <h1 class="form-header">Course Registration Form</h1>
+                <div id="form-container">
+                  <div class="form-description">
+                    <p>
+                      For undergraduate students who are enrolled in 12 to 14
+                      hours for the semester, you may register for up to 18
+                      hours at no additional tuition cost. Other course fees
+                      will apply.
+                    </p>
+                    <p>
+                      Instructors may require exam proctoring services to verify
+                      student identity and minimize the risk of academic
+                      dishonesty. When required, these services may include an
+                      additional cost to the student.
+                    </p>
+                  </div>
+
+                  <form class="submit-form">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                      <option value="" disabled selected>
+                        Choose your subject
+                      </option>
+                    </select>
+
+                    <label for="course-number">Course Number</label>
+                    <input
+                      type="number"
+                      id="courseNumber"
+                      name="course-number"
+                      placeholder="Enter course number"
+                    />
+
+                    <div class="optional-form-elements">
+                      <label for="meeting day">Meeting Days</label>
+                      <div class="meeting-day-wrapper">
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="optcheckbox"
+                            id="checkbox1"
+                            value="Monday"
+                          />Monday
+                          <label
+                            class="form-check-label"
+                            for="checkbox1"
+                          ></label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="optcheckbox"
+                            id="checkbox2"
+                            value="Tuesday"
+                          />Tuesday
+                          <label
+                            class="form-check-label"
+                            for="checkbox2"
+                          ></label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="optcheckbox"
+                            id="checkbox3"
+                            value="Thursday"
+                          />Thursday
+                          <label
+                            class="form-check-label"
+                            for="checkbox3"
+                          ></label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="optcheckbox"
+                            id="checkbox4"
+                            value="Friday"
+                          />Friday
+                          <label
+                            class="form-check-label"
+                            for="checkbox4"
+                          ></label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="optcheckbox"
+                            id="checkbox5"
+                            value="Saturday"
+                          />Saturday
+                          <label
+                            class="form-check-label"
+                            for="checkbox5"
+                          ></label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="optcheckbox"
+                            id="checkbox6"
+                            value="Sunday"
+                          />Sunday
+                          <label
+                            class="form-check-label"
+                            for="checkbox6"
+                          ></label>
+                        </div>
+                      </div>
+
+                      <label for="start end time">Start Time/ End Time</label>
+                      <div class="time-container">
+                        <div class="clock-wrapper">
+                          <p>Start Time:</p>
+                          <input
+                            type="text"
+                            class="form-control start-clock"
+                            value="09:30"
+                          />
+                        </div>
+
+                        <div class="clock-wrapper">
+                          <p>End Time:</p>
+                          <input
+                            type="text"
+                            class="form-control end-clock"
+                            value="09:30"
+                          />
+                        </div>
+                      </div>
+
+                      <label for="credit">Credit</label>
+                      <input
+                        type="number"
+                        id="credit"
+                        name="credit"
+                        placeholder="Enter the number of credit"
+                      />
+
+                      <label for="Professor">Professor</label>
+                      <input
+                        type="text"
+                        id="professor"
+                        name="Professor"
+                        placeholder="Enter a professor's name"
+                      />
+
+                      <div class="catalog-link">
+                        <p>
+                          You forgot what class you need to take?
+                          <a
+                            href="https://dgw.una.edu/Dashboard/worksheets/WEB31"
+                            target="_blank"
+                            >Check your catalog!!</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="search-btn-wrap">
+                      <div class="advanced-search">
+                        <p>Advanced Search</p>
+                      </div>
+                      <button type="submit" id="searchBtn">Search</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="product-description-section">
+                <h2>I fixed the following points.</h2>
+                <ul>
+                  <li>
+                    <p>
+                      I intentionally prepared the same text that was at the top
+                      of the previous form to test if the previous UI issues
+                      were resolved.The previous UI had an issue with form
+                      elements overlapping text when clicking on a link that
+                      read "Advanced Research". So I adjusted the form to
+                      stretch downwards and the problem was solved.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      By making the design of the course registration form
+                      card-shaped, even if the width of the window is changed,
+                      the UX will not collapse and the responsive state will be
+                      maintained. In addition, I created a modern design based
+                      on the UNA base color.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      In addition, I used Bootstrap's library called Clock
+                      Picker for the time clock UI to create a UI that allows
+                      users to specify the time more intuitively.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      In order to create the actual course registration
+                      functions (search function, search filter function, etc.),
+                      it is necessary to manage user information in a database,
+                      and this assignment is more focused on the UI, so I
+                      omitted functions to manage information from the search
+                      form.
+                    </p>
+                  </li>
+                </ul>
+                <h2>Conclusion</h2>
+                <p>
+                  A good UI improves user experience, provides usability and
+                  efficiency, is visually appealing, provides error response and
+                  feedback appropriately, and increases brand value. I realized
+                  once again that the UI is the point of contact with the user
+                  and is an important element that should be given proper
+                  attention in the development process.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copyright">&copy; 2023 Junnosuke Noiri. All rights reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/text.js"></script>
+    <script src="scripts/ajax.js"></script>
+    <!-- Clock Picker -->
+    <script src="https://weareoutman.github.io/clockpicker/dist/jquery-clockpicker.js"></script>
+  </body>
+</html>

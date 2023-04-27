@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JULIETTE-Lab</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Clock Picker -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/bootstrap-clockpicker.min.css" />
+  </head>
+
+  <body>
+    <header>
+      <div
+        class="nav nav-lists header-wrapper justify-content-between align-items-center"
+      >
+        <div class="header-name me-auto">
+          <h1 class="header-title"><a href="/">JULIETTE Final Project</a></h1>
+        </div>
+        <nav class="nav-lists ms-auto">
+          <ul>
+            <li class="home">
+              <a href="./">Home</a>
+            </li>
+            <li class="badUI">
+              <a href="./badui.html">Check bad UI design</a>
+            </li>
+            <li class="improvedUI-link">
+              <a href="./improvedui.html">Check out How I improved it</a>
+            </li>
+            <li class="repo-link">
+              <a
+                href="https://github.com/junnoiri/cis-376-JULIETTE"
+                target="_blank"
+                >See the Code</a
+              >
+            </li>
+            <li class="storycard-link">
+              <a
+                href="https://gist.github.com/barrycumbie/bdbafe19a5de141fb1e0930b32e439e7"
+                target="_blank"
+                >Story Card</a
+              >
+            </li>
+            <li class="nu-link">
+              <a
+                href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjunnoiri.github.io%2Fcis-376-HOTEL%2F"
+                target="_blank"
+                >Validity Checker</a
+              >
+            </li>
+          </ul>
+          <div class="hamburger-menu">
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h1 class="text-center my-5">Bad UI Example</h1>
+            <div class="main-container">
+              <p>
+                One day, I tried to register for the next semester on my
+                smartphone. However, the screen below was displayed even then,
+                and I gave up.
+              </p>
+              <div class="d-flex justify-content-between">
+                <img
+                  src="./img/una_register_form1.PNG"
+                  alt="una-register-form-image1"
+                  class="bad-ui-img"
+                  width="45%"
+                />
+                <img
+                  src="./img/una_register_form2.PNG"
+                  alt="una-register-form-image2"
+                  class="bad-ui-img"
+                  width="45%"
+                />
+              </div>
+
+              <p>The screen looked fine when I just opened it.</p>
+              <p>
+                However, when I tried to register a class, I really couldn't
+                figure out where the button to search for new classes
+                was.(Actually, it was a button labeled "Panel" on the bottom
+                left of the screen.)
+              </p>
+              <div class="d-flex justify-content-between">
+                <img
+                  src="./img/una_register_form3.PNG"
+                  alt="una-register-form-image3"
+                  class="bad-ui-img"
+                  width="45%"
+                />
+                <img
+                  src="./img/una_register_form4.PNG"
+                  alt="una-register-form-image4"
+                  class="bad-ui-img"
+                  width="45%"
+                />
+              </div>
+
+              <p>
+                I finally found the button, but once I clicked on the link that
+                said Advanced Search, the UI collapsed as the search form
+                covered the original text.
+              </p>
+              <p>
+                This could lead to users registering the wrong class, or at
+                least frustration. This is not a great UI from a mobile
+                usability perspective.
+              </p>
+              <p>
+                Of course, most students, myself included, usually use laptops
+                to register for classes. However, if it can be easily registered
+                through a smartphone, it will be very convenient.
+              </p>
+              <p>So I fixed the problems and simplified the search form</p>
+              <p class="improved-ui-link">
+                <a href="./improvedui.html">Check the new search form!!!</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copyright">&copy; 2023 Junnosuke Noiri. All rights reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/text.js"></script>
+    <script src="scripts/ajax.js"></script>
+    <!-- Clock Picker -->
+    <script src="https://weareoutman.github.io/clockpicker/dist/jquery-clockpicker.js"></script>
+  </body>
+</html>
