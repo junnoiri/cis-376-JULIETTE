@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #f2e6fa !important;
+  background-color: #f2e6fa;
   color: #333;
 }
 
@@ -91,6 +91,7 @@ main .main-container .badui-link .material-icons {
 
 main .main-container .bad-ui-img {
   padding-bottom: 30px;
+  width: 45%;
 }
 
 footer {
